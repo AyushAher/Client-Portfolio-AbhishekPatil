@@ -1,5 +1,5 @@
 import React from "react";
-import userImage from "../assets/user.jpg";
+import profile from "../assets/profile.jpg";
 import {
   ComputerDesktopIcon,
   IdentificationIcon,
@@ -20,11 +20,11 @@ const Sidebar = () => {
               className="w-full inline-flex items-center justify-start nav-link p-2 mb-4"
             >
               <img
-                src={userImage}
+                src={profile}
                 alt=""
                 width={48}
                 height={48}
-                className="object-fill rounded-full me-2"
+                className="object-fill rounded-full me-4"
               ></img>
               <div className="">
                 <p className="m-0 text-sm font-semibold">Abhishek Patil</p>

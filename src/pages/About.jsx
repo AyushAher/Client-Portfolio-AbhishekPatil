@@ -1,6 +1,8 @@
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
+import { Link } from "react-router-dom";
+import hero from "../assets/hero-image.jpg";
 
 const About = () => {
   return (
@@ -18,11 +20,7 @@ const About = () => {
       <section className="mb-16">
         <div className="grid grid-cols-6">
           <div className="col-span-2">
-            <img
-              src="https://via.placeholder.com/400"
-              alt="User image"
-              className="w-full h-auto"
-            />
+            <img src={hero} alt="User image" className="w-full h-auto" />
           </div>
           <div className="col-span-4 flex flex-col justify-center items-start p-10">
             <div className="mb-8">
@@ -39,12 +37,15 @@ const About = () => {
               </p>
             </div>
             <div className="mb-16">
-              <button className="collaborate bg-white px-6 py-3 flex justify-start items-center">
-                <span className="me-4">LET'S COLLABORATE</span>
-                <span className="icon">
-                  {<ArrowUpRightIcon className="h-4 w-4" />}
-                </span>
-              </button>
+              <Link to="/contact">
+                <button className="bg-white group py-2 ps-4 pe-2 flex justify-start items-center border rounded-full">
+                  <span className="me-4">LET'S COLLABORATE</span>
+                  <span className="icon  p-1 bg-black rounded-full relative h-6 w-6 overflow-hidden">
+                    <ArrowUpRightIcon className="h-4 w-4 text-white transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+                    <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4 text-white transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+                  </span>
+                </button>
+              </Link>
             </div>
             <div className="grid grid-cols-3 gap-4 w-full">
               <div className="col-span-1">
@@ -119,22 +120,27 @@ const About = () => {
       </section>
 
       <section className="border mb-12">
-        <div className="p-8 border-b flex items-center justify-between">
+        <div className="group p-8 border-b flex items-center justify-between">
           <p className="text-3xl">Dot Net Development</p>
-          <span className="icon p-2 bg-white rounded-full">
-            {<ArrowUpRightIcon className="h-4 w-4" />}
+          <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
+            <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+            <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
           </span>
         </div>
-        <div className="p-8 border-b flex items-center justify-between">
-          <p className="text-3xl">AWS Integration</p>
-          <span className="icon p-2 bg-white rounded-full">
-            {<ArrowUpRightIcon className="h-4 w-4" />}
-          </span>
-        </div>
-        <div className="p-8 border-b flex items-center justify-between">
+
+        <div className="group p-8 border-b flex items-center justify-between">
           <p className="text-3xl">Full Stack Development</p>
-          <span className="icon p-2 bg-white rounded-full">
-            {<ArrowUpRightIcon className="h-4 w-4" />}
+          <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
+            <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+            <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+          </span>
+        </div>
+
+        <div className="group p-8 border-b flex items-center justify-between">
+          <p className="text-3xl">Azure Integration</p>
+          <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
+            <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+            <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
           </span>
         </div>
       </section>
