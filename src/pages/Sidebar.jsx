@@ -125,9 +125,9 @@ const Sidebar = () => {
           </ul>
         </li>
       </ul>
-      <ul className="my-4">
+      <ul className="">
         <li
-          className={`nav-item px-6 lg:px-3 lg:ps-8 ${
+          className={`nav-item px-6 lg:px-3 lg:ps-8 my-4 ${
             menuOpen ? "block" : "hidden"
           } lg:block `}
         >
