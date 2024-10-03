@@ -25,7 +25,7 @@ const Contact = () => {
 
       <section className="">
         <div className="grid grid-cols-6 gap-12">
-          <div className="col-span-2 bg-white border p-8 w-full">
+          <div className="col-span-6 xl:col-span-2 bg-white border p-8 w-full">
             <div className="flex flex-col justify-between items-start w-full h-full">
               <div className="mb-6">
                 <p className="text-xl mb-2">Get in Touch</p>
@@ -33,7 +33,7 @@ const Contact = () => {
               </div>
               <div className="w-full">
                 <div className="w-full py-4 border-b">
-                  <p className="flex justify-between items-center w-full">
+                  <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Email</p>
                     <a
                       href="mailto:patil.abhishek.66333@gmail.com"
@@ -41,18 +41,18 @@ const Contact = () => {
                     >
                       patil.abhishek.66333@gmail.com
                     </a>
-                  </p>
+                  </div>
                 </div>
                 <div className=" w-full py-4 border-b">
-                  <p className="flex justify-between items-center w-full">
+                  <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Phone no.</p>
                     <a href="tel:+91 9423404199" className="">
                       (942)-340-4199
                     </a>
-                  </p>
+                  </div>
                 </div>
                 <div className="w-full py-4 border-b">
-                  <p className="flex justify-between items-center w-full">
+                  <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Let's Connect</p>
                     <div className="flex items-center justify-center gap-2">
                       <a
@@ -73,12 +73,12 @@ const Contact = () => {
                         />
                       </a>
                     </div>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-6 xl:col-span-4">
             <form action="">
               <h3 className="text-2xl mb-8">Send a message</h3>
               <div className="relative w-full">
@@ -91,7 +91,7 @@ const Contact = () => {
                   placeholder="Full Name"
                 />
               </div>
-              <div className="flex items-center justify-between gap-6 mb-6">
+              <div className="flex flex-nowrap md:flex-wrap xl:flex-nowrap items-center justify-between gap-x-6 mb-6">
                 <div className="relative w-full">
                   <AtSymbolIcon className="absolute left-2 top-[1.25em] transform -translate-y-1/2 h-6 w-6 text-gray-400" />
                   <input

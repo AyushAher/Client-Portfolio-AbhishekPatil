@@ -2,7 +2,6 @@ import { SparklesIcon } from "@heroicons/react/16/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { Link } from "react-router-dom";
-import hero from "../assets/hero-image.jpg";
 
 const About = () => {
   return (
@@ -19,10 +18,14 @@ const About = () => {
 
       <section className="mb-16">
         <div className="grid grid-cols-6">
-          <div className="col-span-2">
-            <img src={hero} alt="User image" className="w-full h-auto" />
+          <div className="col-span-6 md:col-span-2">
+            <img
+              src="http://via.placeholder.com/480x480"
+              alt="User image"
+              className="w-full h-auto"
+            />
           </div>
-          <div className="col-span-4 flex flex-col justify-center items-start p-10">
+          <div className="col-span-6 md:col-span-4 flex flex-col justify-center items-start my-8 md:my-0 md:mx-8">
             <div className="mb-8">
               <p className="mb-4">
                 I'm Abhishek, a passionate web developer and software engineer
@@ -48,22 +51,22 @@ const About = () => {
               </Link>
             </div>
             <div className="grid grid-cols-3 gap-4 w-full">
-              <div className="col-span-1">
-                <div className="">
+              <div className="col-span-3 md:col-span-1">
+                <div className="flex items-center justify-start gap-4 md:block">
                   <p className="text-5xl mb-4">5+</p>
-                  <p className="">Projects Completed</p>
+                  <p className="mb-4 md:mb-0">Projects Completed</p>
                 </div>
               </div>
-              <div className="col-span-1">
-                <div className="">
+              <div className="col-span-3 md:col-span-1">
+                <div className="flex items-center justify-start gap-4 md:block">
                   <p className="text-5xl mb-4">2+</p>
-                  <p className="">Years Of Experience</p>
+                  <p className="mb-4 md:mb-0">Years Of Experience</p>
                 </div>
               </div>
-              <div className="col-span-1">
-                <div className="">
+              <div className="col-span-3 md:col-span-1">
+                <div className="flex items-center justify-start gap-4 md:block">
                   <p className="text-5xl mb-4">4+</p>
-                  <p className="">Ongoing Projects</p>
+                  <p className="mb-4 md:mb-0">Ongoing Projects</p>
                 </div>
               </div>
             </div>
@@ -83,14 +86,14 @@ const About = () => {
 
       <section className="mb-16">
         <div className="grid grid-cols-3 gap-6">
-          <div className="col-span-1 bg-white px-8 py-4">
+          <div className="col-span-3 md:col-span-1 bg-white px-8 py-4">
             <h4 className="py-4 border-b text-xl">Discovery & Planning</h4>
             <p className="py-4">
               I immerse myself in understanding the project's objectives, target
               audience, and unique requirements.
             </p>
           </div>
-          <div className="col-span-1 bg-white px-8 py-4">
+          <div className="col-span-3 md:col-span-1 bg-white px-8 py-4">
             <h4 className="py-4 border-b text-xl">
               Development & Implementation
             </h4>
@@ -99,7 +102,7 @@ const About = () => {
               audience, and unique requirements.
             </p>
           </div>
-          <div className="col-span-1 bg-white px-8 py-4">
+          <div className="col-span-3 md:col-span-1 bg-white px-8 py-4">
             <h4 className="py-4 border-b text-xl">Testing & Deployment</h4>
             <p className="py-4">
               From functional assessments to usability checks, to ensure the

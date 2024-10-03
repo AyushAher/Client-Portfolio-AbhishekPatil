@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="h-screen w-screen">
-        <div className="h-full w-full flex justify-content-start ">
+        <div className="h-full w-full lg:flex justify-content-start ">
           <Sidebar />
           <Main />
         </div>

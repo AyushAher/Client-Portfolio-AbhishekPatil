@@ -16,10 +16,10 @@ const Experience = () => {
 
       <section className="">
         <div className="grid grid-cols-5 w-full border-b py-4">
-          <div className="col-span-1 p-4">
+          <div className="col-span-5 md:col-span-1 p-4">
             <p className="">2023-Present</p>
           </div>
-          <div className="col-span-4 p-4">
+          <div className="col-span-5 md:col-span-4 p-4">
             <p className="mb-1">Dot Net Developer</p>
             <p className="mb-4">Jisa Softech</p>
 
@@ -34,10 +34,10 @@ const Experience = () => {
         </div>
 
         <div className="grid grid-cols-5 w-full border-b py-4">
-          <div className="col-span-1 p-4">
+          <div className="col-span-5 md:col-span-1 p-4">
             <p className="">2022-2023</p>
           </div>
-          <div className="col-span-4 p-4">
+          <div className="col-span-5 md:col-span-4 p-4">
             <p className="mb-1">Dot Net Developer</p>
             <p className="mb-4">Persistant Systems</p>
 
