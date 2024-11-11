@@ -2,7 +2,6 @@ import { SparklesIcon } from "@heroicons/react/16/solid";
 import {
   ArrowUpRightIcon,
   AtSymbolIcon,
-  ChatBubbleBottomCenterTextIcon,
   PhoneIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
@@ -18,7 +17,7 @@ const Contact = () => {
           <span className="icon me-3">
             {<SparklesIcon className="h-4 w-4" />}
           </span>
-          <span className="">Meet Abhishek</span>
+          <span className="">Meet Ayush</span>
         </p>
         <h1 className="text-4xl">About Me</h1>
       </section>
@@ -35,19 +34,16 @@ const Contact = () => {
                 <div className="w-full py-4 border-b">
                   <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Email</p>
-                    <a
-                      href="mailto:patil.abhishek.66333@gmail.com"
-                      className=""
-                    >
-                      patil.abhishek.66333@gmail.com
+                    <a href="mailto:ayushaher118@gmail.com" className="">
+                      ayushaher118@gmail.com
                     </a>
                   </div>
                 </div>
                 <div className=" w-full py-4 border-b">
                   <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Phone no.</p>
-                    <a href="tel:+91 9423404199" className="">
-                      (942)-340-4199
+                    <a href="tel:+91 8237482904" className="">
+                      +91-8237482904
                     </a>
                   </div>
                 </div>
@@ -55,14 +51,11 @@ const Contact = () => {
                   <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Let's Connect</p>
                     <div className="flex items-center justify-center gap-2">
-                      <a
-                        href="https://github.com/TheCoderAbhishek"
-                        className=""
-                      >
+                      <a href="https://github.com/AyushAher" className="">
                         <img src={github} alt="github" width={32} height={32} />
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/yuvraj96k/"
+                        href="https://www.linkedin.com/in/ayushaher118/"
                         className=""
                       >
                         <img

@@ -25,15 +25,15 @@ const Sidebar = () => {
             className="w-full inline-flex items-center justify-start nav-link p-2"
           >
             <img
-              src="http://via.placeholder.com/48"
+              src="http://ayush.ramson-developers.com/Images/Me.webp"
               alt=""
               width={48}
               height={48}
               className="object-fill rounded-full me-4"
             ></img>
             <div className="">
-              <p className="m-0 text-sm font-semibold">Abhishek Patil</p>
-              <p className="m-0 text-sm">Full Stack Developer</p>
+              <p className="m-0 text-sm font-semibold">Ayush Aher</p>
+              <p className="m-0 text-sm">Sr. Software Engineer</p>
             </div>
           </Link>
 
@@ -133,12 +133,22 @@ const Sidebar = () => {
         >
           <p className="w-full inline-flex items-center justify-start nav-link p-2 ps-4 py-3  ">
             <span className="icon font-semibold me-1">&#xa9;</span>
-            <span className="icon text-sm">2024</span>
+            <span className="icon text-sm me-1">2024</span>
+            <span className="icon text-sm">Ayush Aher</span>
+          </p>
+          <p className="w-full inline-flex items-center justify-start nav-link p-2 ps-4 py-3  ">
+            <span className="icon text-sm me-1">Designed By </span>
+            <a
+              href="https://abhishekmpatilin.web.app/"
+              className="icon text-sm"
+            >
+              Abhishek M. Patil
+            </a>
           </p>
         </li>
       </ul>
     </div>
-  );
+  );  
 };
 
 export default Sidebar;

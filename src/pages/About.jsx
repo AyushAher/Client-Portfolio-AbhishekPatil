@@ -2,8 +2,26 @@ import { SparklesIcon } from "@heroicons/react/16/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { Link } from "react-router-dom";
+import me from "../assets/me.jpg";
 
 const About = () => {
+  let skillsArray = [
+    "Dotnet Development",
+    "AWS",
+    "Docker",
+    "Swarm",
+    "Kubernetes",
+    "React(TS/JS)",
+    "Bootstrap",
+    "Angular",
+    "Project Management",
+    "Team Leader",
+    "Mentoring",
+    "PostgreSQL",
+    "MYSQL",
+    "Linux",
+    "Windows Server",
+  ];
   return (
     <div className="mt-16 mx-8">
       <section className="header pt-2 mb-12">
@@ -19,24 +37,30 @@ const About = () => {
       <section className="mb-16">
         <div className="grid grid-cols-6">
           <div className="col-span-6 md:col-span-2">
-            <img
-              src="http://via.placeholder.com/480x480"
-              alt="User image"
-              className="w-full h-auto"
-            />
+            <img src={me} alt="User image" className="w-full h-auto" />
           </div>
           <div className="col-span-6 md:col-span-4 flex flex-col justify-center items-start my-8 md:my-0 md:mx-8">
             <div className="mb-8">
               <p className="mb-4">
-                I'm Abhishek, a passionate web developer and software engineer
-                with a relentless curiosity for technology and a drive to create
-                impactful digital solutions. I've honed my skills in web
-                development, and beyond, constantly expand my knowledge.
+                With 4 years in full-stack development, I have honed a broad
+                skill set for managing complex software projects. My technical
+                expertise spans .NET Core, React, Angular, TypeScript, basic
+                Python, Linux, MySQL, and PostgreSQL, equipping me to build and
+                deploy tailored, high-performance solutions. Skilled in version
+                control (Git/GitHub), CI/CD pipelines, Docker deployment, and
+                clean architecture, I ensure scalable, top-quality codebases.
+                Proficient in Bootstrap, I design responsive interfaces that
+                work seamlessly across platforms and handle data complexities
+                efficiently with MySQL and PostgreSQL.
               </p>
-              <p className="">
-                My journey in the world of technology began with a fascination
-                for coding and a desire to bring ideas to life in the digital
-                realm.
+              <p>
+                I thrive in collaborative settings, aligning technical solutions
+                with business goals to achieve impactful outcomes. Committed to
+                continuous learning, I stay updated on emerging technologies,
+                combining technical skill with adaptability and problem-solving.
+                My approach emphasizes innovation and excellence, making me a
+                valuable contributor in dynamic software development
+                environments.
               </p>
             </div>
             <div className="mb-16">
@@ -53,19 +77,19 @@ const About = () => {
             <div className="grid grid-cols-3 gap-4 w-full">
               <div className="col-span-3 md:col-span-1">
                 <div className="flex items-center justify-start gap-4 md:block">
-                  <p className="text-5xl mb-4">5+</p>
+                  <p className="text-5xl mb-4">7+</p>
                   <p className="mb-4 md:mb-0">Projects Completed</p>
                 </div>
               </div>
               <div className="col-span-3 md:col-span-1">
                 <div className="flex items-center justify-start gap-4 md:block">
-                  <p className="text-5xl mb-4">2+</p>
+                  <p className="text-5xl mb-4">3+</p>
                   <p className="mb-4 md:mb-0">Years Of Experience</p>
                 </div>
               </div>
               <div className="col-span-3 md:col-span-1">
                 <div className="flex items-center justify-start gap-4 md:block">
-                  <p className="text-5xl mb-4">4+</p>
+                  <p className="text-5xl mb-4">2+</p>
                   <p className="mb-4 md:mb-0">Ongoing Projects</p>
                 </div>
               </div>
@@ -123,29 +147,37 @@ const About = () => {
       </section>
 
       <section className="border mb-12">
-        <div className="group p-8 border-b flex items-center justify-between">
-          <p className="text-3xl">Dot Net Development</p>
-          <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
-            <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-            <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
-          </span>
-        </div>
+        {skillsArray.map((skill) => (
+          <div className="group p-8 border-b flex items-center justify-between">
+            <p className="text-3xl">{skill}</p>
+            <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
+              <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+              <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+            </span>
+          </div>
+        ))}
+      </section>
 
-        <div className="group p-8 border-b flex items-center justify-between">
-          <p className="text-3xl">Full Stack Development</p>
-          <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
-            <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-            <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+      <section className="header pt-2 mb-12">
+        <p className="flex items-center justify-start text-center mb-4">
+          <span className="icon me-3">
+            {<SparklesIcon className="h-4 w-4" />}
           </span>
-        </div>
+          <span className="">My Skills</span>
+        </p>
+        <h1 className="text-5xl">What I am good at</h1>
+      </section>
 
-        <div className="group p-8 border-b flex items-center justify-between">
-          <p className="text-3xl">Azure Integration</p>
-          <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
-            <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-            <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
-          </span>
-        </div>
+      <section className="border mb-12">
+        {skillsArray.map((skill) => (
+          <div className="group p-8 border-b flex items-center justify-between">
+            <p className="text-3xl">{skill}</p>
+            <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
+              <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+              <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+            </span>
+          </div>
+        ))}
       </section>
     </div>
   );

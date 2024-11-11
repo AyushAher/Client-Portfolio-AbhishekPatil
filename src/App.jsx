@@ -1,6 +1,5 @@
-import { useState } from "react";
 import "./App.css";
-import Sidebar from "./pages/SIdebar";
+import Sidebar from "./pages/Sidebar";
 import Main from "./pages/Main";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
         <div className="h-full w-full lg:flex justify-content-start ">
           <Sidebar />
           <Main />
-        </div>
+        </div> 
       </div>
     </>
   );
