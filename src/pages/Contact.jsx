@@ -19,7 +19,7 @@ const Contact = () => {
           </span>
           <span className="">Meet Ayush</span>
         </p>
-        <h1 className="text-4xl">About Me</h1>
+        <h1 className="text-4xl">Contact Me</h1>
       </section>
 
       <section className="">

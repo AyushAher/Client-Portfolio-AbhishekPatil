@@ -5,7 +5,9 @@ import About from "./About";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Article from "./Article";
-import Project1 from "./Project1";
+import CleanArch from "./projects/CleanArch";
+import EmailUtitlity from "./projects/EmailUtitlity";
+import YamlProcessor from "./projects/YamlProcessor";
 
 const Main = () => {
   return (
@@ -16,7 +18,9 @@ const Main = () => {
         <Route path="/experience" element={<Experience />} />
         <Route path="/articles" element={<Article />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/project1" element={<Project1 />} />
+        <Route path="/project/EmailUtil" element={<EmailUtitlity />} />
+        <Route path="/project/YamlProcessor" element={<YamlProcessor />} />
+        <Route path="/project/CleanArch" element={<CleanArch />} />
       </Routes>
     </div>
   );

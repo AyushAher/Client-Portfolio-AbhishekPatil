@@ -18,118 +18,61 @@ const Work = () => {
         </section>
 
         <section className="">
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-3 gap-2">
             <Link
               to={"/project1"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-red-100 px-6 overflow-hidden relative group"
+              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-black text-white rounded-3xl px-6 overflow-hidden relative group"
             >
               <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Project 1</p>
+                <p className="name m-0 mb-3 py-2 text-lg">
+                  Clean Architecture Template
+                </p>
                 <img
-                  src="http://via.placeholder.com/320x320"
+                  src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
                   alt="Project 2 Mockup"
-                  className="w-full h-auto"
+                  className="w-80"
                 />
               </div>
               <img
-                src="http://via.placeholder.com/320x320"
+                src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
                 alt="Hover Image"
-                className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
+                className="absolute top-0 left-0 bg-black w-80 object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
               />
             </Link>
-
             <Link
-              to={"/project2"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-blue-100 px-6 overflow-hidden relative group"
+              to={"/project1"}
+              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-black text-white rounded-3xl px-6 overflow-hidden relative group"
             >
               <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Project 2</p>
+                <p className="name m-0 mb-3 py-2 text-lg">Email Utility </p>
                 <img
-                  src="http://via.placeholder.com/320x320"
+                  src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
                   alt="Project 2 Mockup"
-                  className="w-full h-auto"
+                  className="w-80"
                 />
               </div>
               <img
-                src="http://via.placeholder.com/320x320"
+                src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
                 alt="Hover Image"
-                className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
+                className="absolute top-0 left-0 bg-black w-80 object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
               />
             </Link>
-
             <Link
-              to={"/project3"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-green-100 px-6 overflow-hidden relative group"
+              to={"/project1"}
+              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-black text-white rounded-3xl px-6 overflow-hidden relative group"
             >
               <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Project 3</p>
+                <p className="name m-0 mb-3 py-2 text-lg">YAML processor</p>
                 <img
-                  src="http://via.placeholder.com/320x320"
-                  alt="Project 3 Mockup"
-                  className="w-full h-auto"
+                  src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
+                  alt="Project 2 Mockup"
+                  className="w-80"
                 />
               </div>
               <img
-                src="http://via.placeholder.com/320x320"
+                src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
                 alt="Hover Image"
-                className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-              />
-            </Link>
-
-            <Link
-              to={"/project4"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-yellow-100 px-6 overflow-hidden relative group"
-            >
-              <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Project 4</p>
-                <img
-                  src="http://via.placeholder.com/320x320"
-                  alt="Project 4 Mockup"
-                  className="w-full h-auto"
-                />
-              </div>
-              <img
-                src="http://via.placeholder.com/320x320"
-                alt="Hover Image"
-                className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-              />
-            </Link>
-
-            <Link
-              to={"/project5"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-purple-100 px-6 overflow-hidden relative group"
-            >
-              <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Project 5</p>
-                <img
-                  src="http://via.placeholder.com/320x320"
-                  alt="Project 5 Mockup"
-                  className="w-full h-auto"
-                />
-              </div>
-              <img
-                src="http://via.placeholder.com/320x320"
-                alt="Hover Image"
-                className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-              />
-            </Link>
-
-            <Link
-              to={"/project6"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-pink-100 px-6 overflow-hidden relative group"
-            >
-              <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Project 6</p>
-                <img
-                  src="http://via.placeholder.com/320x320"
-                  alt="Project 6 Mockup"
-                  className="w-full h-auto"
-                />
-              </div>
-              <img
-                src="http://via.placeholder.com/320x320"
-                alt="Hover Image"
-                className="absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
+                className="absolute top-0 left-0 bg-black w-80 object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
               />
             </Link>
           </div>

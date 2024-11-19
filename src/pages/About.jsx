@@ -1,7 +1,6 @@
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
-import { Link } from "react-router-dom";
 import me from "../assets/me.jpg";
 
 const About = () => {
@@ -29,7 +28,7 @@ const About = () => {
           <span className="icon me-3">
             {<SparklesIcon className="h-4 w-4" />}
           </span>
-          <span className="">Meet Abhishek</span>
+          <span className="">Meet Ayush</span>
         </p>
         <h1 className="text-5xl">About Me</h1>
       </section>
@@ -64,15 +63,15 @@ const About = () => {
               </p>
             </div>
             <div className="mb-16">
-              <Link to="/contact">
+              <a href="/Ayush Aher.pdf">
                 <button className="bg-white group py-2 ps-4 pe-2 flex justify-start items-center border rounded-full">
-                  <span className="me-4">LET'S COLLABORATE</span>
+                  <span className="me-4">DOWNLOAD RESUME</span>
                   <span className="icon  p-1 bg-black rounded-full relative h-6 w-6 overflow-hidden">
                     <ArrowUpRightIcon className="h-4 w-4 text-white transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
                     <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4 text-white transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
                   </span>
                 </button>
-              </Link>
+              </a>
             </div>
             <div className="grid grid-cols-3 gap-4 w-full">
               <div className="col-span-3 md:col-span-1">
@@ -146,36 +145,10 @@ const About = () => {
         <h1 className="text-5xl">What I Do</h1>
       </section>
 
-      <section className="border mb-12">
+      <section className="border mb-12 flex flex-wrap">
         {skillsArray.map((skill) => (
           <div className="group p-8 border-b flex items-center justify-between">
             <p className="text-3xl">{skill}</p>
-            <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
-              <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-              <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
-            </span>
-          </div>
-        ))}
-      </section>
-
-      <section className="header pt-2 mb-12">
-        <p className="flex items-center justify-start text-center mb-4">
-          <span className="icon me-3">
-            {<SparklesIcon className="h-4 w-4" />}
-          </span>
-          <span className="">My Skills</span>
-        </p>
-        <h1 className="text-5xl">What I am good at</h1>
-      </section>
-
-      <section className="border mb-12">
-        {skillsArray.map((skill) => (
-          <div className="group p-8 border-b flex items-center justify-between">
-            <p className="text-3xl">{skill}</p>
-            <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
-              <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-              <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
-            </span>
           </div>
         ))}
       </section>
