@@ -18,63 +18,65 @@ const Work = () => {
         </section>
 
         <section className="">
-          <div className="grid grid-cols-3 gap-2">
-            <Link
-              to={"/project1"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-black text-white rounded-3xl px-6 overflow-hidden relative group"
-            >
-              <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">
-                  Clean Architecture Template
-                </p>
-                <img
-                  src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
-                  alt="Project 2 Mockup"
-                  className="w-80"
-                />
-              </div>
-              <img
-                src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
-                alt="Hover Image"
-                className="absolute top-0 left-0 bg-black w-80 object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-              />
-            </Link>
-            <Link
-              to={"/project1"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-black text-white rounded-3xl px-6 overflow-hidden relative group"
-            >
-              <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">Email Utility </p>
-                <img
-                  src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
-                  alt="Project 2 Mockup"
-                  className="w-80"
-                />
-              </div>
-              <img
-                src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
-                alt="Hover Image"
-                className="absolute top-0 left-0 bg-black w-80 object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-              />
-            </Link>
-            <Link
-              to={"/project1"}
-              className="col-span-4 sm:col-span-2 xl:col-span-1 bg-black text-white rounded-3xl px-6 overflow-hidden relative group"
-            >
-              <div className="px-3 pt-3 relative">
-                <p className="name m-0 mb-3 py-2 text-lg">YAML processor</p>
-                <img
-                  src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
-                  alt="Project 2 Mockup"
-                  className="w-80"
-                />
-              </div>
-              <img
-                src="https://avatars.githubusercontent.com/u/142732832?s=200&v=4"
-                alt="Hover Image"
-                className="absolute top-0 left-0 bg-black w-80 object-cover transition-opacity duration-500 ease-in-out opacity-0 group-hover:opacity-100"
-              />
-            </Link>
+          <div className="flex  justify-around flex-wrap gap-2">
+            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
+              <Link to={"/project1"}>
+                <div className="px-3 mt-3 pt-3 relative">
+                  <div className="flex justify-center">
+                    <img
+                      src="/base-api.jpg"
+                      alt="Project 2 Mockup"
+                      className="w-40"
+                    />
+                  </div>
+                  <p className=" m-0 mt-3 py-2 text-lg">
+                    Clean Architecture Template
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
+              <Link to={"/project1"}>
+                <div className="px-3 mt-3 pt-3 relative">
+                  <div className="flex justify-center">
+                    <img
+                      src="/base-api.jpg"
+                      alt="Project 2 Mockup"
+                      className="w-40"
+                    />
+                  </div>
+                  <p className=" m-0 mt-3 py-2 text-lg">Email Utility </p>
+                </div>
+              </Link>
+            </div>
+            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
+              <Link to={"/project1"}>
+                <div className="px-3 mt-3 pt-3 relative">
+                  <div className="flex justify-center">
+                    <img
+                      src="/base-api.jpg"
+                      alt="Project 2 Mockup"
+                      className="w-40"
+                    />
+                  </div>
+                  <p className=" m-0 mt-3 py-2 text-lg">YAML Processor</p>
+                </div>
+              </Link>
+            </div>
+            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
+              <Link to={"/project1"}>
+                <div className="px-3 mt-3 pt-3 relative">
+                  <div className="flex justify-center">
+                    <img
+                      src="/base-api.jpg"
+                      alt="Project 2 Mockup"
+                      className="w-40"
+                    />
+                  </div>
+                  <p className=" m-0 mt-3 py-2 text-lg">Secure JWT </p>
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
       </div>
