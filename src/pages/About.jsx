@@ -27,9 +27,10 @@ const About = () => {
           <span className="icon me-3">
             {<SparklesIcon className="h-4 w-4" />}
           </span>
-          <span className="">Meet Ayush</span>
+          <span className="">Meet Me</span>
         </p>
-        <h1 className="text-5xl">About Me</h1>
+        <h1 className="text-5xl">Hi, I am Ayush Aher</h1>
+        <h3 className="text-md">Sr. Software Engineer</h3>
       </section>
 
       <section className="mb-16">

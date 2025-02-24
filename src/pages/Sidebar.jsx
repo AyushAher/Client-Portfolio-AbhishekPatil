@@ -25,10 +25,12 @@ const Sidebar = () => {
             className="w-full inline-flex items-center justify-start nav-link p-2"
           >
             <img
-              src="/me-2.jpg"
+              src="/Me.webp"
               alt=""
               style={{ borderRadius: "50%" }}
-              className="w-20 h-20 me-4"
+              width={48}
+              height={48}
+              className="object-fill rounded-full me-4"
             ></img>
             <div className="">
               <p className="m-0 text-sm font-semibold">Ayush Aher</p>
@@ -53,12 +55,12 @@ const Sidebar = () => {
             >
               <Link
                 to="/"
-                className="w-full inline-flex items-center justify-start nav-link p-2 ps-4 py-3"
+                className="w-full inline-flex items-center justify-start  nav-link p-2 ps-4 py-3"
               >
                 <span className="icon">
-                  {<ComputerDesktopIcon className="w-6 h-6 me-4" />}
+                  {<IdentificationIcon className="h-6 w-6 me-4" />}
                 </span>
-                <span className="icon">My Works</span>
+                <span className="icon">About Me</span>
               </Link>
             </li>
             <li
@@ -67,13 +69,13 @@ const Sidebar = () => {
               } lg:block `}
             >
               <Link
-                to="/about"
-                className="w-full inline-flex items-center justify-start  nav-link p-2 ps-4 py-3"
+                to="/work"
+                className="w-full inline-flex items-center justify-start nav-link p-2 ps-4 py-3"
               >
                 <span className="icon">
-                  {<IdentificationIcon className="h-6 w-6 me-4" />}
+                  {<ComputerDesktopIcon className="w-6 h-6 me-4" />}
                 </span>
-                <span className="icon">About Me</span>
+                <span className="icon">My Works</span>
               </Link>
             </li>
             <li
