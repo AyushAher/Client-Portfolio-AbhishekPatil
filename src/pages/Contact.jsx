@@ -34,9 +34,15 @@ const Contact = () => {
                 <div className="w-full py-4 border-b">
                   <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Email</p>
-                    <a href="mailto:ayushaher118@gmail.com" className="">
-                      ayushaher118@gmail.com
-                    </a>
+                    <p>
+                      <a href="mailto:ayushaher118@gmail.com" className="">
+                        ayushaher118@gmail.com
+                      </a>
+                      <br />
+                      <a href="mailto:developers.ramson@gmail.com" className="">
+                        developers.ramson@gmail.com
+                      </a>
+                    </p>
                   </div>
                 </div>
                 <div className=" w-full py-4 border-b">

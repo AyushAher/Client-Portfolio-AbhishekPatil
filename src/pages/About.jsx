@@ -1,7 +1,6 @@
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
-import me from "../assets/me.jpg";
 
 const About = () => {
   let skillsArray = [
@@ -36,7 +35,7 @@ const About = () => {
       <section className="mb-16">
         <div className="grid grid-cols-6">
           <div className="col-span-6 md:col-span-2">
-            <img src={me} alt="User image" className="w-full h-auto" />
+            <img src={"/me-2.jpg"} alt="User image" className="w-full h-auto rounded" />
           </div>
           <div className="col-span-6 md:col-span-4 flex flex-col justify-center items-start my-8 md:my-0 md:mx-8">
             <div className="mb-8">

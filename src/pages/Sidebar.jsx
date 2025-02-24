@@ -25,11 +25,10 @@ const Sidebar = () => {
             className="w-full inline-flex items-center justify-start nav-link p-2"
           >
             <img
-              src="http://ayush.ramson-developers.com/Images/Me.webp"
+              src="/me-2.jpg"
               alt=""
-              width={48}
-              height={48}
-              className="object-fill rounded-full me-4"
+              style={{ borderRadius: "50%" }}
+              className="w-20 h-20 me-4"
             ></img>
             <div className="">
               <p className="m-0 text-sm font-semibold">Ayush Aher</p>
@@ -148,7 +147,7 @@ const Sidebar = () => {
         </li>
       </ul>
     </div>
-  );  
+  );
 };
 
 export default Sidebar;

@@ -1,9 +1,30 @@
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import React from "react";
-
-import { Link } from "react-router-dom";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const Work = () => {
+  let array = [
+    {
+      title: "Secure JWT",
+      date: "February 23, 2025",
+      link: "https://github.com/Hyperspan/SecureJwt",
+    },
+    {
+      title: "Clean Architecture Template",
+      date: "March 25, 2024",
+      link: "https://github.com/Hyperspan/Hyperspan.Base.Api",
+    },
+    {
+      title: "Email Utility",
+      date: "July 31, 2024",
+      link: "https://github.com/Hyperspan/RamsonDevelopers.UtilEmail",
+    },
+    {
+      title: "YAML Processor",
+      date: "February 20, 2024",
+      link: "https://github.com/AyushAher/Yaml_Processor",
+    },
+  ];
   return (
     <>
       <div className="my-16 mx-8">
@@ -17,66 +38,25 @@ const Work = () => {
           <h1 className="text-5xl">My Work</h1>
         </section>
 
-        <section className="">
-          <div className="flex  justify-around flex-wrap gap-2">
-            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
-              <Link to={"/project1"}>
-                <div className="px-3 mt-3 pt-3 relative">
-                  <div className="flex justify-center">
-                    <img
-                      src="/base-api.jpg"
-                      alt="Project 2 Mockup"
-                      className="w-40"
-                    />
-                  </div>
-                  <p className=" m-0 mt-3 py-2 text-lg">
-                    Clean Architecture Template
-                  </p>
-                </div>
-              </Link>
-            </div>
-            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
-              <Link to={"/project1"}>
-                <div className="px-3 mt-3 pt-3 relative">
-                  <div className="flex justify-center">
-                    <img
-                      src="/base-api.jpg"
-                      alt="Project 2 Mockup"
-                      className="w-40"
-                    />
-                  </div>
-                  <p className=" m-0 mt-3 py-2 text-lg">Email Utility </p>
-                </div>
-              </Link>
-            </div>
-            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
-              <Link to={"/project1"}>
-                <div className="px-3 mt-3 pt-3 relative">
-                  <div className="flex justify-center">
-                    <img
-                      src="/base-api.jpg"
-                      alt="Project 2 Mockup"
-                      className="w-40"
-                    />
-                  </div>
-                  <p className=" m-0 mt-3 py-2 text-lg">YAML Processor</p>
-                </div>
-              </Link>
-            </div>
-            <div className="w-[20rem] bg-black text-white rounded-3xl px-2">
-              <Link to={"/project1"}>
-                <div className="px-3 mt-3 pt-3 relative">
-                  <div className="flex justify-center">
-                    <img
-                      src="/base-api.jpg"
-                      alt="Project 2 Mockup"
-                      className="w-40"
-                    />
-                  </div>
-                  <p className=" m-0 mt-3 py-2 text-lg">Secure JWT </p>
-                </div>
-              </Link>
-            </div>
+        <section className="mb-10">
+          <div className="grid grid-cols-2 gap-6">
+            {array.map((x) => (
+              <div className="col-span-2 md:col-span-1 bg-white p-6  hover:outline hover:outline-1 hover:outline-gray-200">
+                <h4 className="articleName text-[20px] mb-2">{x.title}</h4>
+                <p className="date mb-8">{x.date}</p>
+                <a
+                  href={x.link}
+                  target="_blank"
+                  className="group collaborate p-2 flex justify-start items-center border-b"
+                >
+                  <span className="me-4">Read More</span>
+                  <span className="icon  p-1 bg-white rounded-full relative h-6 w-6 overflow-hidden">
+                    <ArrowUpRightIcon className="h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+                    <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+                  </span>
+                </a>
+              </div>
+            ))}
           </div>
         </section>
       </div>

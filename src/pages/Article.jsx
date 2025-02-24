@@ -5,6 +5,11 @@ import React from "react";
 const Article = () => {
   let array = [
     {
+      title: "Secure JWT",
+      date: "February 23, 2025",
+      link: "https://www.linkedin.com/pulse/secure-jwt-ayush-aher-v89df/?trackingId=LkuNVLWIRDSBXoZ5Z1IbZg%3D%3D",
+    },
+    {
       title: "AngularJS vs. Angular: A Tale of Two Frameworks",
       date: "June 24, 2024",
       link: "https://www.linkedin.com/pulse/angularjs-vs-angular-tale-two-frameworks-ayush-aher-rxumf/?trackingId=NXGkRcPISwKlEeXTHhaHdg%3D%3D",
@@ -53,9 +58,6 @@ const Article = () => {
         <div className="grid grid-cols-2 gap-6">
           {array.map((x) => (
             <div className="col-span-2 md:col-span-1 bg-white p-6  hover:outline hover:outline-1 hover:outline-gray-200">
-              <button className="border rounded-full p-2 px-6 mb-6">
-                Auth
-              </button>
               <h4 className="articleName text-[20px] mb-2">{x.title}</h4>
               <p className="date mb-8">{x.date}</p>
               <a
