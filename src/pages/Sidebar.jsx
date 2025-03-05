@@ -6,6 +6,7 @@ import {
   BuildingLibraryIcon,
   ChatBubbleBottomCenterTextIcon,
   Bars3Icon,
+  CircleStackIcon,
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
@@ -107,6 +108,22 @@ const Sidebar = () => {
                 </span>
                 <span className="icon">Articles</span>
               </Link>
+            </li>
+            <li
+              className={`nav-item px-6 lg:px-3 lg:ps-8 ${
+                menuOpen ? "block" : "hidden"
+              } lg:block `}
+            >
+              <a
+                href="https://blogs.ramson-developers.com"
+                target="_blank"
+                className="w-full inline-flex items-center justify-start  nav-link p-2 ps-4 py-3"
+              >
+                <span className="icon">
+                  {<CircleStackIcon className="h-6 w-6 me-4" />}
+                </span>
+                <span className="icon">Blogs/Documentation*</span>
+              </a>
             </li>
             <li
               className={`nav-item px-6 lg:px-3 lg:ps-8 ${
