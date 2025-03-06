@@ -18,7 +18,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="lg:w-[22rem] lg:h-full flex flex-col justify-between">
+    <div className="lg:w-[22rem] lg:h-full flex flex-col justify-between dark:bg-[#353535] dark:text-light-text">
       <ul className="">
         <li className="nav-item flex items-center px-6 my-2 lg:px-3 lg:ps-8 lg:mt-16 lg:mb-4">
           <Link
@@ -45,7 +45,7 @@ const Sidebar = () => {
         </li>
         <li className="relative">
           <ul
-            className={`menu w-full absolute top-full left-0 z-20 bg-white  ${
+            className={`menu w-full absolute top-full left-0 z-20 bg-white dark:bg-[#353535] dark:text-light-text  ${
               menuOpen ? "block" : "hidden"
             } lg:block`}
           >
@@ -70,21 +70,6 @@ const Sidebar = () => {
               } lg:block `}
             >
               <Link
-                to="/work"
-                className="w-full inline-flex items-center justify-start nav-link p-2 ps-4 py-3"
-              >
-                <span className="icon">
-                  {<ComputerDesktopIcon className="w-6 h-6 me-4" />}
-                </span>
-                <span className="icon">My Works</span>
-              </Link>
-            </li>
-            <li
-              className={`nav-item px-6 lg:px-3 lg:ps-8 ${
-                menuOpen ? "block" : "hidden"
-              } lg:block `}
-            >
-              <Link
                 to="/experience"
                 className="w-full inline-flex items-center justify-start  nav-link p-2 ps-4 py-3"
               >
@@ -94,6 +79,22 @@ const Sidebar = () => {
                 <span className="icon">Experience</span>
               </Link>
             </li>
+            <li
+              className={`nav-item px-6 lg:px-3 lg:ps-8 ${
+                menuOpen ? "block" : "hidden"
+              } lg:block `}
+            >
+              <Link
+                to="/work"
+                className="w-full inline-flex items-center justify-start nav-link p-2 ps-4 py-3"
+              >
+                <span className="icon">
+                  {<ComputerDesktopIcon className="w-6 h-6 me-4" />}
+                </span>
+                <span className="icon">My Works</span>
+              </Link>
+            </li>
+         
             <li
               className={`nav-item px-6 lg:px-3 lg:ps-8 ${
                 menuOpen ? "block" : "hidden"
@@ -114,16 +115,15 @@ const Sidebar = () => {
                 menuOpen ? "block" : "hidden"
               } lg:block `}
             >
-              <a
-                href="https://blogs.ramson-developers.com"
-                target="_blank"
+              <Link
+                to="/blogs"
                 className="w-full inline-flex items-center justify-start  nav-link p-2 ps-4 py-3"
               >
                 <span className="icon">
                   {<CircleStackIcon className="h-6 w-6 me-4" />}
                 </span>
-                <span className="icon">Blogs/Documentation*</span>
-              </a>
+                <span className="icon">Technical Docs</span>
+              </Link>
             </li>
             <li
               className={`nav-item px-6 lg:px-3 lg:ps-8 ${

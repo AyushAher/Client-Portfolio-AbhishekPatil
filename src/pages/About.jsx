@@ -95,7 +95,7 @@ const About = () => {
             <img
               src={"/me-2.jpg"}
               alt="User image"
-              className="w-full h-auto rounded"
+              className="w-full h-auto rounded-xl"
             />
           </div>
           <div className="col-span-6 md:col-span-4 flex flex-col justify-center items-start my-8 md:my-0 md:mx-8">
@@ -124,11 +124,11 @@ const About = () => {
             </div>
             <div className="mb-16">
               <a href="/Ayush Aher.pdf">
-                <button className="bg-white group py-2 ps-4 pe-2 flex justify-start items-center border rounded-full">
+                <button className="bg-white dark:bg-dark dark:text-light-text group py-2 ps-4 pe-2 flex justify-start items-center border rounded-full">
                   <span className="me-4">DOWNLOAD RESUME</span>
-                  <span className="icon  p-1 bg-black rounded-full relative h-6 w-6 overflow-hidden">
-                    <ArrowUpRightIcon className="h-4 w-4 text-white transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-                    <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4 text-white transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+                  <span className="icon  p-1 dark:bg-white dark:text-black bg-black rounded-full relative h-6 w-6 overflow-hidden">
+                    <ArrowUpRightIcon className="h-4 w-4 text-white dark:text-black transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+                    <ArrowUpRightIcon className="absolute -left-4 top-full h-4 w-4 text-white dark:text-black transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
                   </span>
                 </button>
               </a>
@@ -169,14 +169,14 @@ const About = () => {
 
       <section className="mb-16">
         <div className="grid grid-cols-3 gap-6">
-          <div className="col-span-3 md:col-span-1 bg-white px-8 py-4">
+          <div className="col-span-3 md:col-span-1 dark:border dark:rounded-3xl bg-white dark:bg-dark dark:text-light-text px-8 py-4">
             <h4 className="py-4 border-b text-xl">Discovery & Planning</h4>
             <p className="py-4">
               I immerse myself in understanding the project's objectives, target
               audience, and unique requirements.
             </p>
           </div>
-          <div className="col-span-3 md:col-span-1 bg-white px-8 py-4">
+          <div className="col-span-3 md:col-span-1 dark:border dark:rounded-3xl bg-white dark:bg-dark dark:text-light-text px-8 py-4">
             <h4 className="py-4 border-b text-xl">
               Development & Implementation
             </h4>
@@ -185,7 +185,7 @@ const About = () => {
               audience, and unique requirements.
             </p>
           </div>
-          <div className="col-span-3 md:col-span-1 bg-white px-8 py-4">
+          <div className="col-span-3 md:col-span-1 dark:border dark:rounded-3xl bg-white dark:bg-dark dark:text-light-text  px-8 py-4">
             <h4 className="py-4 border-b text-xl">Testing & Deployment</h4>
             <p className="py-4">
               From functional assessments to usability checks, to ensure the
@@ -209,7 +209,7 @@ const About = () => {
           </p>
         </section>
 
-        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+        <section className="border dark:border-0 dark:border-t mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
           {frontendSkillsArray.map((skill) => (
             <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
               <p className="">{skill}</p>
@@ -227,7 +227,7 @@ const About = () => {
           </p>
         </section>
 
-        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+        <section className="border dark:border-0 dark:border-t mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
           {backendSkillsArray.map((skill) => (
             <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
               <p className="">{skill}</p>
@@ -245,7 +245,7 @@ const About = () => {
           </p>
         </section>
 
-        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+        <section className="border dark:border-0 dark:border-t mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
           {databaseSkillsArray.map((skill) => (
             <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
               <p className="">{skill}</p>
@@ -263,7 +263,7 @@ const About = () => {
           </p>
         </section>
 
-        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+        <section className="border dark:border-0 dark:border-t mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
           {devopsSkillsArray.map((skill) => (
             <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
               <p className="">{skill}</p>
@@ -281,7 +281,7 @@ const About = () => {
           </p>
         </section>
 
-        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+        <section className="border dark:border-0 dark:border-t mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
           {softSkillsArray.map((skill) => (
             <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
               <p className="">{skill}</p>

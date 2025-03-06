@@ -22,9 +22,9 @@ const Contact = () => {
         <h1 className="text-4xl">Contact Me</h1>
       </section>
 
-      <section className="">
+      <section className="mb-4">
         <div className="grid grid-cols-6 gap-12">
-          <div className="col-span-6 xl:col-span-2 bg-white border p-8 w-full">
+          <div className="col-span-8 xl:col-span-2 bg-white dark:bg-dark border p-8 w-full">
             <div className="flex flex-col justify-between items-start w-full h-full">
               <div className="mb-6">
                 <p className="text-xl mb-2">Get in Touch</p>
@@ -35,11 +35,17 @@ const Contact = () => {
                   <div className="flex flex-wrap gap-2 overflow-hidden justify-between items-center w-full">
                     <p className="email">Email</p>
                     <p>
-                      <a href="mailto:ayushaher118@gmail.com" className="">
+                      <a
+                        href="mailto:ayushaher118@gmail.com"
+                        className="text-ellipsis"
+                      >
                         ayushaher118@gmail.com
                       </a>
                       <br />
-                      <a href="mailto:developers.ramson@gmail.com" className="">
+                      <a
+                        href="mailto:developers.ramson@gmail.com"
+                        className="text-ellipsis"
+                      >
                         developers.ramson@gmail.com
                       </a>
                     </p>
@@ -77,7 +83,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-6 xl:col-span-4">
+          <div className="col-span-4 xl:col-span-4">
             <form action="">
               <h3 className="text-2xl mb-8">Send a message</h3>
               <div className="relative w-full">
@@ -120,11 +126,11 @@ const Contact = () => {
                 className="w-full mb-6 px-4 bg-transparent border-b border-black focus-visible:outline-none resize-none h-auto"
               ></textarea>
 
-              <button className="group bg-white py-2 ps-4 pe-2 flex justify-start items-center border rounded-full">
+              <button className="group bg-white dark:bg-dark dark:text-light-text py-2 ps-4 pe-2 flex justify-start items-center border rounded-full">
                 <span className="me-3">Submit</span>
-                <span className="icon  p-1 bg-black rounded-full relative h-6 w-6 overflow-hidden">
-                  <ArrowUpRightIcon className="h-4 w-4 text-white  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
-                  <ArrowUpRightIcon className="absolute  text-white -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
+                <span className="icon  p-1 bg-black dark:bg-white dark:text-black rounded-full relative h-6 w-6 overflow-hidden">
+                  <ArrowUpRightIcon className="h-4 w-4 text-white dark:text-black  transition-transform duration-300 ease-in-out transform group-hover:translate-x-4 group-hover:-translate-y-4" />
+                  <ArrowUpRightIcon className="absolute  text-white dark:text-black -left-4 top-full h-4 w-4  transition-transform duration-300 ease-in-out transform group-hover:translate-x-5 group-hover:-translate-y-5" />
                 </span>
               </button>
             </form>
