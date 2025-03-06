@@ -3,22 +3,78 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 const About = () => {
-  let skillsArray = [
+  let frontendSkillsArray = [
+    "React(TS/JS)",
+    "C# - MVC ",
+    "Angular",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Figma",
+    "Adobe XD",
+  ];
+
+  let backendSkillsArray = [
     "Dotnet Development",
+    "Solutions Architecture",
+    "Web Security",
+    "API Development",
+    "Entity Framework",
+    "Clean Architecture",
+    "RESTful APIs",
+    "Event Driven Architecture",
+    "nUnit Testing",
+    "TDD",
+    "Postman",
+    "Swagger",
+  ];
+  let devopsSkillsArray = [
     "AWS",
     "Docker",
     "Swarm",
     "Kubernetes",
-    "React(TS/JS)",
-    "Bootstrap",
-    "Angular",
+    "Jenkins",
+    "Git",
+    "GitHub",
+    "Bitbucket",
+    "Linux",
+    "Windows Server",
+    "Active Directory",
+    "CI/CD Pipelines",
+    "Docker Deployment",
+    "IIS",
+    "Automation (bash scripting)",
+  ];
+  let databaseSkillsArray = [
+    "PostgreSQL",
+    "MYSQL",
+    "MongoDB",
+    "SQL Server",
+    "Database Design",
+    "Database Management",
+    "Database Optimization",
+    "Database Security",
+  ];
+  let softSkillsArray = [
     "Project Management",
     "Team Leader",
     "Mentoring",
-    "PostgreSQL",
-    "MYSQL",
-    "Linux",
-    "Windows Server",
+    "Problem Solving",
+    "Critical Thinking",
+    "Communication",
+    "Time Management",
+    "Adaptability",
+    "Collaboration",
+    "Innovation",
+    "Leadership",
+    "Decision Making",
+    "Conflict Resolution",
+    "Stress Management",
+    "Work Ethic",
+    "Professionalism",
+    "Accountability",
+    "Teamwork",
+    "Feedback",
+    "Goal Setting",
   ];
   return (
     <div className="mt-16 mx-8">
@@ -36,7 +92,11 @@ const About = () => {
       <section className="mb-16">
         <div className="grid grid-cols-6">
           <div className="col-span-6 md:col-span-2">
-            <img src={"/me-2.jpg"} alt="User image" className="w-full h-auto rounded" />
+            <img
+              src={"/me-2.jpg"}
+              alt="User image"
+              className="w-full h-auto rounded"
+            />
           </div>
           <div className="col-span-6 md:col-span-4 flex flex-col justify-center items-start my-8 md:my-0 md:mx-8">
             <div className="mb-8">
@@ -135,23 +195,100 @@ const About = () => {
         </div>
       </section>
 
-      <section className="header pt-2 mb-12">
-        <p className="flex items-center justify-start text-center mb-4">
-          <span className="icon me-3">
-            {<SparklesIcon className="h-4 w-4" />}
-          </span>
-          <span className="">Our Services</span>
-        </p>
-        <h1 className="text-5xl">What I Do</h1>
+      <section className="header pt-2 mb-2">
+        <h1 className="text-3xl">Skills</h1>
       </section>
 
-      <section className="border mb-12 flex flex-wrap">
-        {skillsArray.map((skill) => (
-          <div className="group p-8 border-b flex items-center justify-between">
-            <p className="text-3xl">{skill}</p>
-          </div>
-        ))}
-      </section>
+      <>
+        <section className="header pt-2 mb-4">
+          <p className="flex items-center justify-start text-center font-bold mb-4">
+            <span className="icon me-3">
+              {<SparklesIcon className="h-4 w-4" />}
+            </span>
+            <span className="">Frontend Skills</span>
+          </p>
+        </section>
+
+        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+          {frontendSkillsArray.map((skill) => (
+            <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
+              <p className="">{skill}</p>
+            </div>
+          ))}
+        </section>
+      </>
+      <>
+        <section className="header pt-2 mb-4">
+          <p className="flex items-center justify-start text-center font-bold mb-4">
+            <span className="icon me-3">
+              {<SparklesIcon className="h-4 w-4" />}
+            </span>
+            <span className="">Backend Skills</span>
+          </p>
+        </section>
+
+        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+          {backendSkillsArray.map((skill) => (
+            <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
+              <p className="">{skill}</p>
+            </div>
+          ))}
+        </section>
+      </>
+      <>
+        <section className="header pt-2 mb-4">
+          <p className="flex items-center justify-start text-center font-bold mb-4">
+            <span className="icon me-3">
+              {<SparklesIcon className="h-4 w-4" />}
+            </span>
+            <span className="">Databases Skills</span>
+          </p>
+        </section>
+
+        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+          {databaseSkillsArray.map((skill) => (
+            <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
+              <p className="">{skill}</p>
+            </div>
+          ))}
+        </section>
+      </>
+      <>
+        <section className="header pt-2 mb-4">
+          <p className="flex items-center justify-start text-center font-bold mb-4">
+            <span className="icon me-3">
+              {<SparklesIcon className="h-4 w-4" />}
+            </span>
+            <span className="">Devops Skills</span>
+          </p>
+        </section>
+
+        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+          {devopsSkillsArray.map((skill) => (
+            <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
+              <p className="">{skill}</p>
+            </div>
+          ))}
+        </section>
+      </>
+      <>
+        <section className="header pt-2 mb-4">
+          <p className="flex items-center justify-start text-center font-bold mb-4">
+            <span className="icon me-3">
+              {<SparklesIcon className="h-4 w-4" />}
+            </span>
+            <span className="">Soft Skills</span>
+          </p>
+        </section>
+
+        <section className="border mb-12 flex items-center justify-center py-3 flex-wrap gap-4">
+          {softSkillsArray.map((skill) => (
+            <div className="group p-8 border border-stone-300 rounded-xl text-xl hover:border-stone-600 hover:transition-all hover:font-[450] flex items-center justify-between">
+              <p className="">{skill}</p>
+            </div>
+          ))}
+        </section>
+      </>
     </div>
   );
 };
